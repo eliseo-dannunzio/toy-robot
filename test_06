@@ -1,0 +1,13 @@
+place 0 , 0 , north
+move
+move
+move
+move
+right
+move
+right
+move
+move
+left
+move
+report

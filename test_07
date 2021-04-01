@@ -1,0 +1,15 @@
+place 0,0,northh
+move
+move
+move
+move
+report
+place 0,0,north
+right
+move
+right
+move
+move
+left
+move
+report
