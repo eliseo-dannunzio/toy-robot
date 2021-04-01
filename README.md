@@ -52,6 +52,29 @@ Constraints
   includes the initial placement of the toy robot.
 - Any move that would cause the robot to fall must be ignored.
 
+Installation
+------------
+
+- Download this repo into a new folder and run the following command:
+
+`node toy-robot.js`
+
+At this point you will be expected to enter commands. To view the command list, use the command "HELP".
+
+Please note: Commands can be typed in either lower case or upper case.
+
+Command List:
+- HELP - Shows the help screen
+- EXIT - Exits program
+- PLACE <x>,<y>,<direction> - Places TR on the grid at <x>,<y> facing direction <direction>
+- LEFT - Turns TR left 90 degrees
+- RIGHT - Turns TR right 90 degrees
+- MOVE - Moves TR forward in current direction if able to move forward on grid
+- REPORT - reports current location and direction
+- RUN <filename> - Runs TR script in file <filename>
+
+Feel free to run any of the test files that have come as part of this repo. An explanation for each test file can be found in `test-explanations.txt`.
+
 Example Input and Output
 ------------------------
 
