@@ -1,4 +1,4 @@
-const dirArr = ["NORTH","EAST","SOUTH","WEST"]; // Directions
+const dirArr = ['NORTH','EAST','SOUTH','WEST']; // Directions
 
 function place(x, y, dir, robot, limits) {
   if(
@@ -22,12 +22,12 @@ function place(x, y, dir, robot, limits) {
 
 function rotate(dir, robot) {
   switch(dir) {
-  	case "LEFT":
+    case 'LEFT':
       robot.direction = (robot.direction + 3) % 4;
-  	  break;
-  	case "RIGHT":
+      break;
+    case 'RIGHT':
       robot.direction = (robot.direction + 1) % 4;
-  	  break;
+      break;
   }
   return robot;
 }
