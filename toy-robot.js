@@ -10,7 +10,7 @@ const ud = undefined;
 
 let limits = {x: 5, y: 5}; // Width and Height of Table
 let robot = {x: 0, y: 0, direction: 0, placed: false}; // Sets robot position, direction and placement flag
-let runningFile = false; // Used to error trap against "RUN" commands within files
+let runningFile = false; // Used to error trap against 'RUN' commands within files
 
 const runFile = function(filename) {
     fs.readFile(filename, 'utf8', function(err, data) {
@@ -54,7 +54,7 @@ const doCommand = function(commandArr) {
 	            process.exit(0);
 				break;
 			case 'PLACE':
-				let [x, y, direction] = [commandArr[1], commandArr[2], (commandArr[3] || "").toUpperCase()];
+				let [x, y, direction] = [commandArr[1], commandArr[2], (commandArr[3] || '').toUpperCase()];
 				robot = place(x, y, direction, robot, limits);				
 				break;
 			case 'LEFT':
