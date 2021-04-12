@@ -6,8 +6,6 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-const ud = undefined;
-
 let limits = {x: 5, y: 5}; // Width and Height of Table
 let robot = {x: 0, y: 0, direction: 0, placed: false}; // Sets robot position, direction and placement flag
 let runningFile = false; // Used to error trap against 'RUN' commands within files
